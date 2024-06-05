@@ -1,5 +1,6 @@
-# kafka
+# KAFKA
 
+### Local Docker CLI operations :
 ```shell
 docker run -p 9092:9092 apache/kafka:3.7.0
 
@@ -14,4 +15,14 @@ bin/kafka-topics.sh --describe --topic user-topic --bootstrap-server localhost:9
 bin/kafka-console-producer.sh --topic user-topic --bootstrap-server localhost:9092
 
 bin/kafka-console-consumer.sh --topic user-topic --from-beginning --bootstrap-server localhost:9092
+```
+
+### Classes used in code :
+
+### Producer
+```shell
+TopicBuilder
+ProducerFactory<K, TV>
+DefaultKafkaProducerFactory<K, V>
+KafkaTemplate<K, V>
 ```
