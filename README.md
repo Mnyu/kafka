@@ -1,5 +1,11 @@
 # KAFKA
 
+### Components
+
+1. [Producer](https://github.com/Mnyu/kafka/blob/main/kafka-producer/README.md)
+2. [Consumer](https://github.com/Mnyu/kafka/blob/main/kafka-consumer/README.md)
+
+
 ### Local Docker CLI operations :
 ```shell
 docker run -p 9092:9092 apache/kafka:3.7.0
@@ -16,8 +22,3 @@ bin/kafka-console-producer.sh --topic user-topic --bootstrap-server localhost:90
 
 bin/kafka-console-consumer.sh --topic user-topic --from-beginning --bootstrap-server localhost:9092
 ```
-
-### Kafka Components
-
-1. [Producer](https://github.com/Mnyu/kafka/blob/main/kafka-producer/README.md)
-2. [Consumer](https://github.com/Mnyu/kafka/blob/main/kafka-consumer/README.md)
