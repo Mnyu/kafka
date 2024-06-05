@@ -1,0 +1,15 @@
+# Producer
+
+### Properties
+```properties
+spring.kafka.producer.bootstrap-servers=localhost:9092
+spring.kafka.producer.key-serializer=org.apache.kafka.common.serialization.StringSerializer
+spring.kafka.producer.value-serializer=org.apache.kafka.common.serialization.StringSerializer
+```
+
+### Classes
+
+```shell
+TopicBuilder
+KafkaTemplate<K, V>
+```

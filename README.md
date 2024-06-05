@@ -16,13 +16,3 @@ bin/kafka-console-producer.sh --topic user-topic --bootstrap-server localhost:90
 
 bin/kafka-console-consumer.sh --topic user-topic --from-beginning --bootstrap-server localhost:9092
 ```
-
-### Classes used in code :
-
-### Producer
-```shell
-TopicBuilder
-ProducerFactory<K, TV>
-DefaultKafkaProducerFactory<K, V>
-KafkaTemplate<K, V>
-```
