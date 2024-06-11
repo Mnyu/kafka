@@ -49,3 +49,6 @@ In our applications, the state is stored in State Stores. They have the followin
 ![Image](https://github.com/Mnyu/kafka/blob/main/kafka-streams-bank-transactions/docs/dataModel.jpeg)
 
 ![Image](https://github.com/Mnyu/kafka/blob/main/kafka-streams-bank-transactions/docs/Topology.jpeg)
+
+### Steps to run :
+1. Run kafka container and create required topics - ```bank-transactions```,```bank-balances"``` and ```rejected-transactions```.
