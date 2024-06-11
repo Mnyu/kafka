@@ -1,5 +1,7 @@
 # KAFKA
 
+[Official Documentation](https://kafka.apache.org/documentation/)
+
 ### Components
 
 1. [Producer](https://github.com/Mnyu/kafka/blob/main/kafka-producer/README.md)
