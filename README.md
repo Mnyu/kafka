@@ -8,6 +8,7 @@
 2. [Consumer](https://github.com/Mnyu/kafka/blob/main/kafka-consumer/README.md)
 3. Kafka Streams :
    1. [Stateless Processing](https://github.com/Mnyu/kafka/blob/main/kafka-streams-voice-command-parser/README.md)
+   2. [Stateful Processing](https://github.com/Mnyu/kafka/blob/main/kafka-streams-bank-transactions/README.md)
 
 
 ### Local Docker CLI operations :
