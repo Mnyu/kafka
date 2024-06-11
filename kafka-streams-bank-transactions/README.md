@@ -42,3 +42,9 @@ In our applications, the state is stored in State Stores. They have the followin
 2. Tables can be represented as Streams of changes. Everytime a change happens in a table, this can be streamed. In a sense, a Stream can be seen as a ChangeLog for a table.
    <br></br>
 3. A Stream can be used to reconstruct a Table, by applying the Insert or Update operations on the same key.
+
+### Bank Transactions and Balance Management App
+
+![Image](https://github.com/Mnyu/kafka/blob/main/kafka-streams-bank-transactions/docs/dataModel.jpeg)
+
+![Image](https://github.com/Mnyu/kafka/blob/main/kafka-streams-bank-transactions/docs/Topology.jpeg)
