@@ -43,6 +43,9 @@ In our applications, the state is stored in State Stores. They have the followin
    <br></br>
 3. A Stream can be used to reconstruct a Table, by applying the Insert or Update operations on the same key.
 
+<br></br>
+<br></br>
+<br></br>
 ### Bank Transactions and Balance Management App
 
 ![Image](https://github.com/Mnyu/kafka/blob/main/kafka-streams-bank-transactions/docs/dataModel.jpeg)
