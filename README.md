@@ -19,6 +19,8 @@ docker exec -it <CONTAINER_NAME> bash
 
 cd /opt/kafka
 
+./kafka-topics.sh --list --bootstrap-server localhost:9092
+
 bin/kafka-topics.sh --create --topic user-topic --bootstrap-server localhost:9092
 
 bin/kafka-topics.sh --describe --topic user-topic --bootstrap-server localhost:9092

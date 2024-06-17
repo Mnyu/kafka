@@ -52,3 +52,13 @@ In our applications, the state is stored in State Stores. They have the followin
 
 ### Steps to run :
 1. Run kafka container and create required topics - ```bank-transactions```,```bank-balances"``` and ```rejected-transactions```.
+2. Run a console consumer
+   ```shell
+   ./kafka-console-consumer.sh --topic bank-balances --bootstrap-server localhost:9092 --from-beginning --property print.key=true --property key.separator=" : " --key-deserializer "org.apache.kafka.common.serialization.LongDeserializer" --value-deserializer "org.apache.kafka.common.serialization.StringDeserializer"
+   ```
+3. Run ```BankTransactionProducer```
+4. Run the app ```BankBalanceApp```
+5. Also check the Rejected Transactions by running another console consumer
+    ```shell
+   ./kafka-console-consumer.sh --topic rejected-transactions --bootstrap-server localhost:9092 --from-beginning --property print.key=true --property key.separator=" : " --key-deserializer "org.apache.kafka.common.serialization.LongDeserializer" --value-deserializer "org.apache.kafka.common.serialization.StringDeserializer"
+   ```
