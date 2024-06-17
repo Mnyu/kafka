@@ -1,4 +1,4 @@
-# Saving Kafka Stream Spring Boot App
+# Scaling Kafka Stream Spring Boot App
 
 ### Tasks/Requirements
 
