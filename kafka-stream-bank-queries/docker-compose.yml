@@ -1,0 +1,46 @@
+---
+version: '3'
+
+services:
+  kafka:
+    image: apache/kafka:3.7.0
+    hostname: kafka
+    container_name: kafka
+    ports:
+      - "9092:9092"
+
+  kafka-create-topics:
+    image: apache/kafka:3.7.0
+    ports:
+      - "29092:9092"
+    depends_on:
+      - kafka
+    hostname: kafka-create-topics
+    command: ["bash", "./create-topics.sh"]
+    working_dir: /scripts
+    volumes:
+      - ./scripts:/scripts
+
+#  spring-app-1:
+#    container_name: spring-app-1
+#    hostname: spring-app-1
+#    image: bank/bank-transactions:latest
+#    depends_on:
+#      - kafka-create-topics
+#    ports:
+#      - "7070:8080"
+#    volumes:
+#      - /tmp/kafka-streams/1:/tmp/kafka-streams
+#    command: java -jar /app.jar --host.info=spring-app-1:8080
+#
+#  spring-app-2:
+#    container_name: spring-app-2
+#    hostname: spring-app-2
+#    image: bank/bank-transactions:latest
+#    depends_on:
+#      - kafka-create-topics
+#    ports:
+#      - "8080:8080"
+#    volumes:
+#      - /tmp/kafka-streams/2:/tmp/kafka-streams
+#    command: java -jar /app.jar --host.info=spring-app-2:8080
