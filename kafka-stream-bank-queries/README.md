@@ -15,3 +15,5 @@ http://localhost:8080/bank-balance/2
 http://localhost:8080/bank-balance/3
 http://localhost:8080/bank-balance/4
 ```
+
+[Scaling Kafka Stream Spring Boot App](https://github.com/Mnyu/kafka/blob/main/kafka-stream-bank-queries/Scaling.md)
